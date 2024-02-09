@@ -19,6 +19,24 @@ public class methods {
         return diffs;
     }
 
+    public static int getMinimum(int[] numbers) {
+        int min = numbers[0];
+        for (int i = 1; i < numbers.length; i++){
+            if (min >= numbers[i]){
+                min = numbers[i];
+            }
+        }
+    }
+
+    public static int getMaximum(int[] numbers) {
+        int max = numbers[0];
+        for (int i = 1; i < numbers.length; i++){
+            if (max <= numbers[i]){
+                max = numbers[i];
+            }
+        }
+    }
+    
     public static String arrayString(int[] numbers) {
         String output = "{";
         for (int i = 0; i < numbers.length - 1; i++) {
